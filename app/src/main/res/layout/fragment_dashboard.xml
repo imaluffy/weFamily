@@ -6,24 +6,17 @@
     android:background="@color/light_grey">
 
     <TextView
-        android:id="@+id/tv_myFamily"
+        android:id="@+id/tv_Dashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="18dp"
-        android:text="My Family"
+        android:text="Dashboard"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rec_member_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_myFamily" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
