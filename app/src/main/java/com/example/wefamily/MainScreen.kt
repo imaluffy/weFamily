@@ -14,14 +14,25 @@ class MainScreen : AppCompatActivity() {
 
         bottomBar.setOnItemSelectedListener(){
 
-            if(it.itemId==R.id.nav_security) {
-                inflateFragment(GuardFragment.newInstance())
-            }else if(it.itemId==R.id.nav_home){
-                inflateFragment(HomeFragment.newInstance())
+            when (it.itemId) {
+                R.id.nav_security -> {
+                    inflateFragment(GuardFragment.newInstance())
+                }
+                R.id.nav_home -> {
+                    inflateFragment(HomeFragment.newInstance())
+                }
+                R.id.nav_dashboard -> {
+                    inflateFragment(DashboardFragment.newInstance())
+                }
+                R.id.nav_profile -> {
+                    inflateFragment(ProfileFragment.newInstance())
+                }
             }
 
             true
         }
+
+        bottomBar.selectedItemId=R.id.nav_home
     }
 
 
